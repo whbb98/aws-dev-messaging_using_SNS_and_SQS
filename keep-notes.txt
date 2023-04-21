@@ -1,0 +1,5 @@
+DeadLetterQueue QueueUrl:
+AWS Account ID:
+updated_beans.fifo QueueUrl:
+updated_beans.fifo QueueArn:
+updated_beans_sns.fifo TopicArn:
