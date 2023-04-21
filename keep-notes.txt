@@ -1,4 +1,4 @@
-DeadLetterQueue QueueUrl:
+DeadLetterQueue QueueUrl: https://sqs.us-east-1.amazonaws.com/516620149088/DeadLetterQueue.fifo
 AWS Account ID:
 updated_beans.fifo QueueUrl:
 updated_beans.fifo QueueArn:
