@@ -4,5 +4,5 @@
   "ReceiveMessageWaitTimeSeconds": "20",
   "ContentBasedDeduplication": "true",
   "DeduplicationScope": "queue",
-  "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:<FMI_1>:DeadLetterQueue.fifo\",\"maxReceiveCount\":\"5\"}"
+  "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:516620149088:DeadLetterQueue.fifo\",\"maxReceiveCount\":\"5\"}"
 }

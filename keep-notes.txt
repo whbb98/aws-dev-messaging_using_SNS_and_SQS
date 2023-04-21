@@ -1,5 +1,17 @@
 DeadLetterQueue QueueUrl: https://sqs.us-east-1.amazonaws.com/516620149088/DeadLetterQueue.fifo
 AWS Account ID:
-updated_beans.fifo QueueUrl:
-updated_beans.fifo QueueArn:
+updated_beans.fifo QueueUrl: https://sqs.us-east-1.amazonaws.com/516620149088/updated_beans.fifo
+updated_beans.fifo QueueArn: arn:aws:sqs:us-east-1:516620149088:updated_beans.fifo
 updated_beans_sns.fifo TopicArn:
+
+
+
+################################################################
+
+aws sqs set-queue-attributes --queue-url "https://sqs.us-east-1.amazonaws.com/516620149088/DeadLetterQueue.fifo" --attributes file://dlq-policy.json
+
+aws sqs create-queue --queue-name updated_beans.fifo --attributes file://create-beans-queue.json
+
+aws sqs set-queue-attributes --queue-url "https://sqs.us-east-1.amazonaws.com/516620149088/updated_beans.fifo" --attributes file://beans-queue-policy.json
+
+aws sqs get-queue-attributes --queue-url "https://sqs.us-east-1.amazonaws.com/516620149088/updated_beans.fifo" --attribute-names QueueArn
