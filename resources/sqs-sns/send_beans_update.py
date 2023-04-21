@@ -1,7 +1,7 @@
 import boto3
 import sys
 
-sns_topic = 'arn:aws:sns:us-east-1:<FMI_1>:updated_beans_sns.fifo'
+sns_topic = 'arn:aws:sns:us-east-1:516620149088:updated_beans_sns.fifo'
 sns_client = boto3.client('sns')
 file_name = sys.argv[1]
 file_handle = open(file_name)

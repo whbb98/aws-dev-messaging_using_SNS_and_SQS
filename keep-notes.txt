@@ -19,3 +19,4 @@ aws sqs get-queue-attributes --queue-url "https://sqs.us-east-1.amazonaws.com/51
 aws sns set-topic-attributes --cli-input-json file://beans-topic-policy.json
 
 aws sns subscribe --topic-arn "arn:aws:sns:us-east-1:516620149088:updated_beans_sns.fifo" --protocol sqs --notification-endpoint "arn:aws:sqs:us-east-1:516620149088:updated_beans.fifo"
+
